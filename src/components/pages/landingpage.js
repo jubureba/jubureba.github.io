@@ -1,28 +1,36 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 
+
 class Landing extends Component {
     render() {
         return (
         <div style ={{width: '100%', margin: 'auto' }}>
-            <Grid className="landing-grid">
-                <Cell col={12}>
+            <div className="landing-grid" >
+            <img className='bg' src={'https://i.redd.it/cdfz5g8yfymz.png'} />
                     <div className="circle">
                         <img 
                             alt="avatar"
                             className="avatar-img"
-                            src="https://scontent.fbel1-1.fna.fbcdn.net/v/t1.0-9/14191895_1241350472583735_7428871373355356583_n.jpg?_nc_cat=109&_nc_oc=AQnut8DSWBmgMNkrKJEdbev8D_I7if6dJoplm8g_S_gs_mDprusXItIrTwoavreg-RE&_nc_ht=scontent.fbel1-1.fna&oh=014b30d318535b0b6ad97ffe11c6e72b&oe=5DD03C5D" />
+                            src="https://i.imgur.com/G5fwVDy.png" />
                     </div>
                     <div className="banner-text">
-                        <h1>Full Stack Developer</h1>
+                        <h1>Full Stack C# Developer</h1>
+
+                        <h2>Hey! Welcome to my Portfolio</h2>
                         <hr/>
 
-                        <p>HTML/CSS | Bootstrap | React | React Native | Nodejs | Express | MongoDB</p>
+                        <p>HTML/CSS | React | React Native | NodeJS | C# | WPF | ENTITYFRAMEWORK</p>
 
                         <div className="social-links">
                             {/* LinkedIn */}
-                            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                            <a href="https://www.linkedin.com/in/jubureba/" rel="noopener noreferrer" target="_blank">
                                 <i className="fa fa-linkedin-square"  aria-hidden="true"/>
+                            </a>
+
+                            {/* Facebook */}
+                            <a href="https://facebook.com/jubureba/" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-facebook-square"  aria-hidden="true"/>
                             </a>
 
                             {/* GitHub */}
@@ -30,10 +38,7 @@ class Landing extends Component {
                                 <i className="fa fa-github-square"  aria-hidden="true"/>
                             </a>
 
-                            {/* Freecodecamp */}
-                            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                <i className="fa fa-free-code-camp"  aria-hidden="true"/>
-                            </a>
+                      
 
                             {/* Youtube */}
                             <a href="http://google.com" rel="noopener noreferrer" target="_blank">
@@ -42,8 +47,8 @@ class Landing extends Component {
                             
                         </div>
                     </div>
-                </Cell>
-            </Grid>
+               
+            </div>
         </div>
         )
     }
