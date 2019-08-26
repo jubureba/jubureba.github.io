@@ -162,7 +162,7 @@ header nav a {
   font-weight: bold;
   text-decoration: none;
   
-  font-size: 1.3em;
+  font-size: 1.4em;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -191,6 +191,8 @@ header.smaller h1#logo {
 header.smaller nav a {
   line-height: 75px;
 }
+
+/* MOBILE SCREEN */
 @media all and (max-width: 760px) {
   header h1#logo {
     display: block;
@@ -199,9 +201,93 @@ header.smaller nav a {
     height: 100px;
     line-height: 80px;
     text-align: center;
-    font-size: 30px;
-    color: red;
+    font-size: 20px;
+    color: white;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
   }
+
+
+.circle { 
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%; 
+    margin-left: -170px; 
+    top: 50%; 
+    margin-top: -150px; 
+
+    -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+     
+  }
+  
+  .avatar-img {
+    position: absolute;
+    bottom: .1;
+    left: 10%;
+    width: 100%;
+    
+  }
+
+
+  
+.banner-text {
+  background-color: black;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 30px;
+  margin-bottom: 3em;
+  
+}
+.banner-text h1 {
+  padding-top: 2em;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  
+}
+.banner-text h2 {
+  font-size: 20px;
+  font-family: 'Josefin Sans', cursive;
+  color: #a3a3a3;
+  opacity: .7;
+}
+
+.banner-text hr {
+  border-top: 2px dotted white;
+  width: 50%;
+  margin: auto;
+}
+.banner-text p {
+  color: white;
+  font-size: 16px;
+  padding: 1em;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+
+}
+.social-links i {
+  color: white;
+  font-size: 2em;
+  padding: 8px;
+}
+
 
   header nav {
     display: block;
@@ -214,6 +300,8 @@ header.smaller nav a {
   header nav a {
     line-height: 50px;
     margin: 0 10px;
+    font-size: 15px;
+    
   }
 
   header.smaller {
