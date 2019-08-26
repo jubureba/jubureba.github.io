@@ -10,7 +10,7 @@ function App() {
     <div className="demo-big-content">
         <Layout>
             <Header waterfall className="header-color">
-                <HeaderRow title="Title">
+                <HeaderRow title="TESTE">
                     <Textfield
                         value=""
                         onChange={() => {}}
