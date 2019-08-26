@@ -12,7 +12,6 @@ img.bg {
 }
 
 
-
 .landing-grid {
   /*background: #0f0c29; */ /* fallback for old browsers */
   text-align: center;
@@ -200,6 +199,8 @@ header.smaller nav a {
     height: 100px;
     line-height: 80px;
     text-align: center;
+    font-size: 30px;
+    color: red;
   }
 
   header nav {

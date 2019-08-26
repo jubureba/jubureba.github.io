@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89641365302aad72d1ab7bc04e71b360",
+    "revision": "5bb776477264b5384e5035dae91d52fe",
     "url": "/jubureba.github.io/build/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jubureba.github.io/build/static/css/2.60a6b8e0.chunk.css"
   },
   {
-    "revision": "4bf36c7f7de6fbf9f1d1",
-    "url": "/jubureba.github.io/build/static/css/main.3a0aae0b.chunk.css"
+    "revision": "9ce0bb2d4f90bd47a509",
+    "url": "/jubureba.github.io/build/static/css/main.ccc10d93.chunk.css"
   },
   {
     "revision": "c60bb9a431d5f9d67f0e",
     "url": "/jubureba.github.io/build/static/js/2.c8336d1c.chunk.js"
   },
   {
-    "revision": "4bf36c7f7de6fbf9f1d1",
+    "revision": "9ce0bb2d4f90bd47a509",
     "url": "/jubureba.github.io/build/static/js/main.da1af927.chunk.js"
   },
   {
