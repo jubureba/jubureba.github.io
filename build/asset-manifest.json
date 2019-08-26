@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/build/static/css/main.67a84ecc.chunk.css",
-    "main.js": "/build/static/js/main.de9cbd70.chunk.js",
-    "main.js.map": "/build/static/js/main.de9cbd70.chunk.js.map",
-    "runtime~main.js": "/build/static/js/runtime~main.76a08384.js",
-    "runtime~main.js.map": "/build/static/js/runtime~main.76a08384.js.map",
-    "static/css/2.60a6b8e0.chunk.css": "/build/static/css/2.60a6b8e0.chunk.css",
-    "static/js/2.37460f96.chunk.js": "/build/static/js/2.37460f96.chunk.js",
-    "static/js/2.37460f96.chunk.js.map": "/build/static/js/2.37460f96.chunk.js.map",
-    "index.html": "/build/index.html",
-    "precache-manifest.e2b76ec4b057cf501d250a26a0d18c57.js": "/build/precache-manifest.e2b76ec4b057cf501d250a26a0d18c57.js",
-    "service-worker.js": "/build/service-worker.js",
-    "static/css/2.60a6b8e0.chunk.css.map": "/build/static/css/2.60a6b8e0.chunk.css.map",
-    "static/css/main.67a84ecc.chunk.css.map": "/build/static/css/main.67a84ecc.chunk.css.map"
+    "main.css": "/jubureba.github.io/static/css/main.67a84ecc.chunk.css",
+    "main.js": "/jubureba.github.io/static/js/main.22743050.chunk.js",
+    "main.js.map": "/jubureba.github.io/static/js/main.22743050.chunk.js.map",
+    "runtime~main.js": "/jubureba.github.io/static/js/runtime~main.48d646b8.js",
+    "runtime~main.js.map": "/jubureba.github.io/static/js/runtime~main.48d646b8.js.map",
+    "static/css/2.60a6b8e0.chunk.css": "/jubureba.github.io/static/css/2.60a6b8e0.chunk.css",
+    "static/js/2.2e8448d0.chunk.js": "/jubureba.github.io/static/js/2.2e8448d0.chunk.js",
+    "static/js/2.2e8448d0.chunk.js.map": "/jubureba.github.io/static/js/2.2e8448d0.chunk.js.map",
+    "index.html": "/jubureba.github.io/index.html",
+    "precache-manifest.81731fa2e22a06156b68f3e406fb8eb3.js": "/jubureba.github.io/precache-manifest.81731fa2e22a06156b68f3e406fb8eb3.js",
+    "service-worker.js": "/jubureba.github.io/service-worker.js",
+    "static/css/2.60a6b8e0.chunk.css.map": "/jubureba.github.io/static/css/2.60a6b8e0.chunk.css.map",
+    "static/css/main.67a84ecc.chunk.css.map": "/jubureba.github.io/static/css/main.67a84ecc.chunk.css.map"
   }
 }
