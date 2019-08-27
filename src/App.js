@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content, HeaderRow, Textfield } from 'react-mdl';
-import Main from './components/pages/main';
-import { Link } from 'react-router-dom';
-
+import Main from './components/pages/landingpage';
+import { configureAnchors } from 'react-scrollable-anchor';
 export default class App extends React.Component {
     componentDidMount() {
         window.addEventListener("scroll", this.resizeHeaderOnScroll);
       }
+      
       resizeHeaderOnScroll() {
         const distanceY = window.pageYOffset || document.documentElement.scrollTop,
           shrinkOn = 40,
@@ -19,6 +18,7 @@ export default class App extends React.Component {
           headerEl.classList.remove("smaller");
         }
       }
+      
       render() {
   return (
       
@@ -42,39 +42,6 @@ export default class App extends React.Component {
             <Main/>
             
             </div>
-        <Layout>
-           {/*  <Header  waterfall  className="header-color">
-                <HeaderRow title="<Anderson Thiago/>">
-                    <Textfield
-                        value=""
-                        placeholder="Pesquisar"
-                        onChange={() => {}}
-                        label="Search2"
-                        expandable
-                        expandableIcon="search"
-                    />
-                </HeaderRow>
-                <HeaderRow >
-                    <Navigation className="teste">
-                        <Link  to="/resume">Resumo</Link>
-                        <Link to="/aboutme">Sobre mim</Link>
-                        <Link to="/projects">Projetos</Link>
-                        <Link to="/contact">Contato</Link>
-                    </Navigation>
-                </HeaderRow>
-            </Header>*/}
-
-        
-      
-     
-
-
-            
-
-
-
-        </Layout>
-
     </div>
   );
         }
