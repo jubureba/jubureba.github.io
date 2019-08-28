@@ -4,11 +4,11 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
 
 class Landing extends Component {
-  
+
     render() {
         return (
             <div style={{ width: '100%', margin: 'auto' }}>
-                
+
                 <div id="RESUME" className="landing-grid" >
                     <div className="backgroundImg">
 
@@ -18,7 +18,7 @@ class Landing extends Component {
                                 className="avatar-img"
                                 src="https://i.imgur.com/G5fwVDy.png" />
                         </div>
-                        
+
                         <div className="banner-text">
                             <h1>Full Stack C# Developer</h1>
 
@@ -54,134 +54,163 @@ class Landing extends Component {
                     </div>
 
                     {/* ============ PROJECTS =======================================*/}
-                    
-                        <div id="PROJECTS" className="divProjects">
-                            <div style={{ width: '80%', margin: 'auto' }}>
-                                <h1 >RECENT PROJECTS</h1>
-                                <hr />
-                                <Grid className="demo-grid-ruler">
-                                    <Cell className="cell" col={1}>
-                                        <div className="containerProject">
-                                            <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                            <div className="middle">
-                                                <div className="text">PROJECT 1</div>
-                                            </div>
+
+                    <div id="PROJECTS" className="divProjects">
+                        <div style={{ width: '80%', margin: 'auto' }}>
+                            <h1 >RECENT PROJECTS</h1>
+                            <hr />
+                            <Grid className="demo-grid-ruler">
+                                <Cell className="cell" col={1}>
+                                    <div className="containerProject">
+                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <div className="middle">
+                                            <div className="text">PROJECT 1</div>
                                         </div>
+                                    </div>
 
-                                    </Cell>
-                                    <Cell className="cell" col={1}>
-                                        <div className="containerProject">
-                                            <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                            <div className="middle">
-                                                <div className="text">PROJECT 2</div>
-                                            </div>
+                                </Cell>
+                                <Cell className="cell" col={1}>
+                                    <div className="containerProject">
+                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <div className="middle">
+                                            <div className="text">PROJECT 2</div>
                                         </div>
+                                    </div>
 
-                                    </Cell>
-                                    <Cell className="cell" col={1}>
-                                        <div className="containerProject">
-                                            <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                            <div className="middle">
-                                                <div className="text">PROJECT 3</div>
-                                            </div>
+                                </Cell>
+                                <Cell className="cell" col={1}>
+                                    <div className="containerProject">
+                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <div className="middle">
+                                            <div className="text">PROJECT 3</div>
                                         </div>
+                                    </div>
 
-                                    </Cell>
-                                    <Cell className="cell" col={1}>
-                                        <div className="containerProject">
-                                            <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                            <div className="middle">
-                                                <div className="text">PROJECT 4</div>
-                                            </div>
+                                </Cell>
+                                <Cell className="cell" col={1}>
+                                    <div className="containerProject">
+                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <div className="middle">
+                                            <div className="text">PROJECT 4</div>
                                         </div>
+                                    </div>
 
-                                    </Cell>
-                                    <Cell className="cell" col={1}>
-                                        <div className="containerProject">
-                                            <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                            <div className="middle">
-                                                <div className="text">PROJECT 5</div>
-                                            </div>
+                                </Cell>
+                                <Cell className="cell" col={1}>
+                                    <div className="containerProject">
+                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <div className="middle">
+                                            <div className="text">PROJECT 5</div>
                                         </div>
+                                    </div>
 
-                                    </Cell>
-                                    <Cell className="cell" col={1}>
-                                        <div className="containerProject">
-                                            <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                            <div className="middle">
-                                                <div className="text">PROJECT 6</div>
-                                            </div>
+                                </Cell>
+                                <Cell className="cell" col={1}>
+                                    <div className="containerProject">
+                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <div className="middle">
+                                            <div className="text">PROJECT 6</div>
                                         </div>
+                                    </div>
 
-                                    </Cell>
-                                    <Cell className="cell" col={1}>
-                                        <div className="containerProject">
-                                            <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                            <div className="middle">
-                                                <div className="text">PROJECT 6</div>
-                                            </div>
+                                </Cell>
+                                <Cell className="cell" col={1}>
+                                    <div className="containerProject">
+                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <div className="middle">
+                                            <div className="text">PROJECT 6</div>
                                         </div>
+                                    </div>
 
-                                    </Cell>
-                                    <Cell className="cell" col={1}>
-                                        <div className="containerProject">
-                                            <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                            <div className="middle">
-                                                <div className="text">PROJECT 6</div>
-                                            </div>
+                                </Cell>
+                                <Cell className="cell" col={1}>
+                                    <div className="containerProject">
+                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <div className="middle">
+                                            <div className="text">PROJECT 6</div>
                                         </div>
+                                    </div>
 
-                                    </Cell>
-                                    <Cell className="cell" col={1}>
-                                        <div className="containerProject">
-                                            <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                            <div className="middle">
-                                                <div className="text">PROJECT 6</div>
-                                            </div>
+                                </Cell>
+                                <Cell className="cell" col={1}>
+                                    <div className="containerProject">
+                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <div className="middle">
+                                            <div className="text">PROJECT 6</div>
                                         </div>
+                                    </div>
 
-                                    </Cell>
-                                    <Cell className="cell" col={1}>
-                                        <div className="containerProject">
-                                            <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                            <div className="middle">
-                                                <div className="text">PROJECT 6</div>
-                                            </div>
+                                </Cell>
+                                <Cell className="cell" col={1}>
+                                    <div className="containerProject">
+                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <div className="middle">
+                                            <div className="text">PROJECT 6</div>
                                         </div>
+                                    </div>
 
-                                    </Cell>
+                                </Cell>
 
-                                </Grid>
+                            </Grid>
 
-                            </div>
                         </div>
-                    
-
-
-
+                    </div>
 
                     {/* ABOUT ME =========================================================*/}
-                    
-                        <div id="ABOUTME" className="backgroundAboutme">
-                            <div className="aboutmediv">
-                                <h1>About Me</h1>
-                                <hr />
-                                <p>Full Stack C# Developer using WPF, ENTITYFRAMEWORK, SQLServer.
-                                    Experienced in building CRUD applications, REST APIs using Node.js and express.
-                                    bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla bla
+
+                    <div id="ABOUTME" className="backgroundAboutme">
+                        <div className="aboutmediv">
+                            <h1>ABOUT ME</h1>
+                            <hr />
+                            <p>Full Stack C# Developer using WPF, ENTITYFRAMEWORK, SQLServer.
+                                Experienced in building CRUD applications, REST APIs using Node.js and express.
+                                bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla bla
                             </p>
-                            </div>
                         </div>
-                    
+                    </div>
+
 
                     {/* CONTACT =========================================================*/}
                     <div className="contactdiv">
-
-                        <h1>Contact</h1>
+                        <h1>CONTACT</h1>
                         <hr />
-                        <p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p><p>a</p>
+                        <div className="icon-contact">
+                            <ul className="horizontal-list">
+                                <li>
+                                    <p>
+                                        <i class="fa fa-phone fa-3x" ></i>
+                                    </p>
+                                    <p>Fone:</p>
+                                    <p>(91)99602-4230</p>
+                                </li>
 
+                                <li>
+                                    <p><i class="fa fa-envelope fa-3x" ></i></p>
+                                    <p>Email:</p>
+                                    <p>eng.thiagolima@hotmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
+                    {/* FIND ME*/}
+
+                    <div id="ABOUTME" className="backgroundAboutme">
+                        <div className="aboutmediv">
+                            <h1>FIND ME</h1>
+                            <hr />
+                            <iframe className="mapLocal" width="400" height="400" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Bel%C3%A9m%2C%20pedreira%2C%20pedro%20miranda%201618+(Find%20me)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <br /><br /><br />
+                        </div>
+                    </div>
+
+                    {/* RODAPE =========================================================*/}
+                    <div className="backgroundRodape">
+                        <div className="rodape">
+
+                            <hr />
+                            <p>Copyright @ Anderson Thiago 2019</p>
+                        </div>
                     </div>
 
 

@@ -2,7 +2,6 @@
   width: 100%;
   height: 100%;
   padding-top: 50px;
- 
   background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2012/11/13/21969/e3f508fb8ebe3b917de57deeacb1129d-1000.jpg');
   opacity: 1;
   background-attachment: fixed;
@@ -436,3 +435,59 @@ header.smaller nav a {
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
+
+
+/*  CONTACT */
+
+.contactdiv {
+  background-color: white;
+  width: 100%;
+  position: relative;
+  height: auto;
+
+}
+
+.contactdiv h1 {
+  padding-top: 2%;
+  font-size: 40px;
+  color: black;
+  font-family: 'Josefin Sans', cursive;
+  margin-bottom: 0%;
+}
+
+.contactdiv hr {
+  border-top: 3px solid black;
+  width: 5%;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+.contactdiv p {
+  font-size: 25px;
+  color: black;
+  
+}
+.horizontal-list ul{
+	min-width: 696px;
+	list-style: none;
+  padding-top: 20px;
+  line-height: 100px;
+	}
+.horizontal-list li {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 50px; /* esse cara vai centralizar*/
+    margin-right: 50px;
+    max-width: 800px;
+
+    
+}
+.icon-contact {
+  display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+
+
+
+/* RODAPÉ */
