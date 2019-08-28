@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/jubureba.github.io/build/precache-manifest.56b63c54f8f5b911560f5dcc0d165c63.js"
+  "/jubureba.github.io/build/precache-manifest.cf2a5e78ecc7021ced7abcd1eea08a34.js"
 );
 
 self.addEventListener('message', (event) => {
