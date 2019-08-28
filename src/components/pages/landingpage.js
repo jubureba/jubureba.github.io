@@ -35,12 +35,12 @@ class Landing extends Component {
 
                                 {/* Facebook */}
                                 <a href="https://facebook.com/jubureba/" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-facebook-square" aria-hidden="true" />
+                                    <i className="fa fa-facebook-f" aria-hidden="true" />
                                 </a>
 
                                 {/* GitHub */}
                                 <a href="http://github.com/jubureba" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-github-square" aria-hidden="true" />
+                                    <i className="fa fa-fw fa-github" aria-hidden="true" />
                                 </a>
 
 
@@ -177,17 +177,15 @@ class Landing extends Component {
                         <div className="icon-contact">
                             <ul className="horizontal-list">
                                 <li>
-                                    <p>
-                                        <i class="fa fa-phone fa-3x" ></i>
-                                    </p>
-                                    <p>Fone:</p>
-                                    <p>(91)99602-4230</p>
+                                    <p className="icon"><i class="fa fa-phone fa-3x" ></i></p>
+                                    <p className="txtContact">Fone:</p>
+                                    <p className="txtContact2">(91)99602-4230</p>
                                 </li>
 
                                 <li>
-                                    <p><i class="fa fa-envelope fa-3x" ></i></p>
-                                    <p>Email:</p>
-                                    <p>eng.thiagolima@hotmail.com</p>
+                                    <p className="icon"><i class="fa fa-envelope fa-3x" ></i></p>
+                                    <p className="txtContact">Email:</p>
+                                    <p className="txtContact2">eng.thiagolima@hotmail.com</p>
                                 </li>
                             </ul>
                         </div>
