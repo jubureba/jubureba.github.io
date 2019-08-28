@@ -62,9 +62,9 @@ class Landing extends Component {
                             <Grid className="demo-grid-ruler">
                                 <Cell className="cell" col={1}>
                                     <div className="containerProject">
-                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <img src="https://i.imgur.com/gyzFkFE.jpg" className="imgProjects"  alt="Project React Js for portfolio" />
                                         <div className="middle">
-                                            <div className="text">PROJECT 1</div>
+                                            <div className="text"><a href="#">React Js Portfolio</a></div>
                                         </div>
                                     </div>
 
@@ -73,7 +73,7 @@ class Landing extends Component {
                                     <div className="containerProject">
                                         <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
                                         <div className="middle">
-                                            <div className="text">PROJECT 2</div>
+                                            <div className="text"><a href="#">PROJECT2</a></div>
                                         </div>
                                     </div>
 
@@ -82,7 +82,7 @@ class Landing extends Component {
                                     <div className="containerProject">
                                         <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
                                         <div className="middle">
-                                            <div className="text">PROJECT 3</div>
+                                            <div className="text"><a href="#">PROJECT3</a></div>
                                         </div>
                                     </div>
 
@@ -91,7 +91,7 @@ class Landing extends Component {
                                     <div className="containerProject">
                                         <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
                                         <div className="middle">
-                                            <div className="text">PROJECT 4</div>
+                                            <div className="text"><a href="#">PROJECT4</a></div>
                                         </div>
                                     </div>
 
@@ -100,7 +100,7 @@ class Landing extends Component {
                                     <div className="containerProject">
                                         <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
                                         <div className="middle">
-                                            <div className="text">PROJECT 5</div>
+                                            <div className="text"><a href="#">PROJECT5</a></div>
                                         </div>
                                     </div>
 
@@ -109,7 +109,7 @@ class Landing extends Component {
                                     <div className="containerProject">
                                         <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
                                         <div className="middle">
-                                            <div className="text">PROJECT 6</div>
+                                            <div className="text"><a href="#">PROJECT6</a></div>
                                         </div>
                                     </div>
 
@@ -118,7 +118,7 @@ class Landing extends Component {
                                     <div className="containerProject">
                                         <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
                                         <div className="middle">
-                                            <div className="text">PROJECT 6</div>
+                                            <div className="text"><a href="#">PROJECT7</a></div>
                                         </div>
                                     </div>
 
@@ -127,7 +127,7 @@ class Landing extends Component {
                                     <div className="containerProject">
                                         <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
                                         <div className="middle">
-                                            <div className="text">PROJECT 6</div>
+                                            <div className="text"><a href="#">PROJECT8</a></div>
                                         </div>
                                     </div>
 
@@ -136,7 +136,7 @@ class Landing extends Component {
                                     <div className="containerProject">
                                         <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
                                         <div className="middle">
-                                            <div className="text">PROJECT 6</div>
+                                            <div className="text"><a href="#">PROJECT9</a></div>
                                         </div>
                                     </div>
 
@@ -145,7 +145,7 @@ class Landing extends Component {
                                     <div className="containerProject">
                                         <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
                                         <div className="middle">
-                                            <div className="text">PROJECT 6</div>
+                                            <div className="text"><a href="#">PROJECT</a></div>
                                         </div>
                                     </div>
 
