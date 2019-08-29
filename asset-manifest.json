@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jubureba.github.io/build/static/css/main.5fe14a6f.chunk.css",
+    "main.css": "/jubureba.github.io/build/static/css/main.f0fc0a38.chunk.css",
     "main.js": "/jubureba.github.io/build/static/js/main.04579e14.chunk.js",
     "main.js.map": "/jubureba.github.io/build/static/js/main.04579e14.chunk.js.map",
     "runtime~main.js": "/jubureba.github.io/build/static/js/runtime~main.ac11a6a9.js",
@@ -9,9 +9,9 @@
     "static/js/2.5c7daa1b.chunk.js": "/jubureba.github.io/build/static/js/2.5c7daa1b.chunk.js",
     "static/js/2.5c7daa1b.chunk.js.map": "/jubureba.github.io/build/static/js/2.5c7daa1b.chunk.js.map",
     "index.html": "/jubureba.github.io/build/index.html",
-    "precache-manifest.cf2a5e78ecc7021ced7abcd1eea08a34.js": "/jubureba.github.io/build/precache-manifest.cf2a5e78ecc7021ced7abcd1eea08a34.js",
+    "precache-manifest.bed262f954b88ec0caddd5168cc3e567.js": "/jubureba.github.io/build/precache-manifest.bed262f954b88ec0caddd5168cc3e567.js",
     "service-worker.js": "/jubureba.github.io/build/service-worker.js",
     "static/css/2.60a6b8e0.chunk.css.map": "/jubureba.github.io/build/static/css/2.60a6b8e0.chunk.css.map",
-    "static/css/main.5fe14a6f.chunk.css.map": "/jubureba.github.io/build/static/css/main.5fe14a6f.chunk.css.map"
+    "static/css/main.f0fc0a38.chunk.css.map": "/jubureba.github.io/build/static/css/main.f0fc0a38.chunk.css.map"
   }
 }
