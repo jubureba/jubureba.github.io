@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/jubureba.github.io/build/static/css/main.f0fc0a38.chunk.css",
-    "main.js": "/jubureba.github.io/build/static/js/main.04579e14.chunk.js",
-    "main.js.map": "/jubureba.github.io/build/static/js/main.04579e14.chunk.js.map",
+    "main.css": "/jubureba.github.io/build/static/css/main.afa3d734.chunk.css",
+    "main.js": "/jubureba.github.io/build/static/js/main.dd916367.chunk.js",
+    "main.js.map": "/jubureba.github.io/build/static/js/main.dd916367.chunk.js.map",
     "runtime~main.js": "/jubureba.github.io/build/static/js/runtime~main.ac11a6a9.js",
     "runtime~main.js.map": "/jubureba.github.io/build/static/js/runtime~main.ac11a6a9.js.map",
     "static/css/2.60a6b8e0.chunk.css": "/jubureba.github.io/build/static/css/2.60a6b8e0.chunk.css",
-    "static/js/2.5c7daa1b.chunk.js": "/jubureba.github.io/build/static/js/2.5c7daa1b.chunk.js",
-    "static/js/2.5c7daa1b.chunk.js.map": "/jubureba.github.io/build/static/js/2.5c7daa1b.chunk.js.map",
+    "static/js/2.707457f9.chunk.js": "/jubureba.github.io/build/static/js/2.707457f9.chunk.js",
+    "static/js/2.707457f9.chunk.js.map": "/jubureba.github.io/build/static/js/2.707457f9.chunk.js.map",
     "index.html": "/jubureba.github.io/build/index.html",
-    "precache-manifest.bed262f954b88ec0caddd5168cc3e567.js": "/jubureba.github.io/build/precache-manifest.bed262f954b88ec0caddd5168cc3e567.js",
+    "precache-manifest.be528bc4b1f9271789738eba979245d3.js": "/jubureba.github.io/build/precache-manifest.be528bc4b1f9271789738eba979245d3.js",
     "service-worker.js": "/jubureba.github.io/build/service-worker.js",
     "static/css/2.60a6b8e0.chunk.css.map": "/jubureba.github.io/build/static/css/2.60a6b8e0.chunk.css.map",
-    "static/css/main.f0fc0a38.chunk.css.map": "/jubureba.github.io/build/static/css/main.f0fc0a38.chunk.css.map"
+    "static/css/main.afa3d734.chunk.css.map": "/jubureba.github.io/build/static/css/main.afa3d734.chunk.css.map"
   }
 }

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import ScrollableAnchor from 'react-scrollable-anchor';
-import { configureAnchors } from 'react-scrollable-anchor';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class Landing extends Component {
+
 
     render() {
         return (
             <div style={{ width: '100%', margin: 'auto' }}>
-
+                <Element name="resume" className="resume" ></Element>
                 <div id="RESUME" className="landing-grid" >
                     <div className="backgroundImg">
 
@@ -30,7 +30,7 @@ class Landing extends Component {
                             <div className="social-links">
                                 {/* LinkedIn */}
                                 <a href="https://www.linkedin.com/in/jubureba/" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-linkedin-square" aria-hidden="true" />
+                                    <i className="fa fa-linkedin" aria-hidden="true" />
                                 </a>
 
                                 {/* Facebook */}
@@ -46,7 +46,7 @@ class Landing extends Component {
 
                                 {/* Youtube */}
                                 <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-youtube-square" aria-hidden="true" />
+                                    <i className="fa fa-youtube" aria-hidden="true" />
                                 </a>
 
                             </div>
@@ -57,12 +57,13 @@ class Landing extends Component {
 
                     <div id="PROJECTS" className="divProjects">
                         <div style={{ width: '80%', margin: 'auto' }}>
+                            <Element name="projects" className="projects" ></Element>
                             <h1 >RECENT PROJECTS</h1>
                             <hr />
                             <Grid className="demo-grid-ruler">
                                 <Cell className="cell" col={1}>
                                     <div className="containerProject">
-                                        <img src="https://i.imgur.com/gyzFkFE.jpg" className="imgProjects"  alt="Project React Js for portfolio" />
+                                        <img src="https://i.imgur.com/gyzFkFE.jpg" className="imgProjects" alt="Project React Js for portfolio" />
                                         <div className="middle">
                                             <div className="text"><a href="#">React Js Portfolio</a></div>
                                         </div>
@@ -159,6 +160,7 @@ class Landing extends Component {
                     {/* ABOUT ME =========================================================*/}
 
                     <div id="ABOUTME" className="backgroundAboutme">
+                        <Element name="aboutme" className="aboutme" ></Element>
                         <div className="aboutmediv">
                             <h1>ABOUT ME</h1>
                             <hr />
@@ -172,7 +174,9 @@ class Landing extends Component {
 
                     {/* CONTACT =========================================================*/}
                     <div className="contactdiv">
+                        <Element name="contact" className="contact" ></Element>
                         <h1>CONTACT</h1>
+
                         <hr />
                         <div className="icon-contact">
                             <ul className="horizontal-list">
@@ -193,12 +197,54 @@ class Landing extends Component {
 
                     {/* FIND ME*/}
 
-                    <div id="ABOUTME" className="backgroundAboutme">
-                        <div className="aboutmediv">
-                            <h1>FIND ME</h1>
+                    <div id="FINDME" className="backgroundFindme">
+                        <div className="findmeDiv">
+                            <h1 className="h1findme">FIND ME</h1>
                             <hr />
-                            <iframe className="mapLocal" width="400" height="400" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Bel%C3%A9m%2C%20pedreira%2C%20pedro%20miranda%201618+(Find%20me)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                            <br /><br /><br />
+
+                            <Grid className="demo-grid-ruler">
+                                <Cell >
+                                    <div className="mapa">
+                                        <h1 >CURRENT LOCATION:</h1>
+                                        <h2>Belém, PA</h2>
+                                        <iframe className="mapLocal" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Bel%C3%A9m%2C%20pedreira%2C%20pedro%20miranda%201618+(Find%20me)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    </div>
+                                </Cell>
+
+
+
+                                <Cell >
+                                    <div className="socialnet">
+                                        <h1> FIND ME ON:</h1>
+                                        <div className="social-links">
+                                            {/* LinkedIn */}
+                                            <a href="https://www.linkedin.com/in/jubureba/" rel="noopener noreferrer" target="_blank">
+                                                <i className="fa fa-linkedin" aria-hidden="true" />
+                                            </a>
+
+                                            {/* Facebook */}
+                                            <a href="https://facebook.com/jubureba/" rel="noopener noreferrer" target="_blank">
+                                                <i className="fa fa-facebook-f" aria-hidden="true" />
+                                            </a>
+
+                                            {/* GitHub */}
+                                            <a href="http://github.com/jubureba" rel="noopener noreferrer" target="_blank">
+                                                <i className="fa fa-fw fa-github" aria-hidden="true" />
+                                            </a>
+
+
+                                            {/* Youtube */}
+                                            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                                <i className="fa fa-youtube" aria-hidden="true" />
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </Cell>
+                            </Grid>
+
+
+
                         </div>
                     </div>
 

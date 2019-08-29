@@ -27,6 +27,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 .landing-grid {
@@ -149,7 +150,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  border-bottom: solid 0.1em black;
+  border-bottom: solid 0.1em white;
   background-color: #0f0c29;
   transition: height 0.3s;
 }
@@ -187,6 +188,21 @@ header nav a {
   font-weight: bold;
   text-decoration: none;
   font-size: 1.4em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: 'Josefin Sans', cursive;
+}
+
+.navHeader {
+  line-height: 150px;
+  margin-left: 20px;
+  color: #fcfcfc;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15pt;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -422,6 +438,101 @@ header.smaller nav a {
 
 /* ================================================================================================*/
 
+/* ====================================== FIND ME   ================================================*/
+
+/* ================================================================================================*/
+
+/* ================================================================================================*/
+
+/* ================================================================================================*/
+
+
+.findmeDiv {
+  background-color: #0f0c29;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  padding: 3px;
+  margin: 0px;
+  padding-bottom: 50px;
+}
+
+.h1findme  {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Josefin Sans', cursive;
+  margin-bottom: 0%;
+}
+
+.backgroundFindme hr {
+  border-top: 3px solid white;
+  width: 7%;
+  margin: auto;
+  margin-bottom: 2%;
+  padding-bottom: 40px;
+}
+
+.mapLocal {
+  height: 400px;
+  width: 400px;
+  border-radius: 10%;
+  padding: 30px;
+}
+.mapa {
+  width: 100%;
+  position: relative;
+  margin-left: 50%;
+  padding-bottom: 5%;
+}
+.mapa h1 {
+  font-size: 33px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.mapa h2{
+  font-size: 25px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.socialnet {
+  display: inline-block;
+  position: relative;
+  width:  100%;
+  margin-left: 50%;
+}
+.socialnet h1 {
+  font-size: 33px;
+  color: white;
+  padding: 0;
+  margin: 0 0 30px 0; 
+}
+.socialnet i {
+  color: white;
+  font-size: 25px;
+  width: 20px;
+  height: 20px;
+  
+}
+.socialnet a {
+  margin-right: 10px;
+  
+  
+}
+
+
+
+
+
+
+/* ================================================================================================*/
+
+/* ================================================================================================*/
+
+/* ================================================================================================*/
+
 /* ====================================== MOBILE   ================================================*/
 
 /* ================================================================================================*/
@@ -549,5 +660,11 @@ header.smaller nav a {
   .containerProject {
     position: relative;
     width: 150px;
+  }
+  .mapLocal {
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+    padding: 30px;
   }
 }

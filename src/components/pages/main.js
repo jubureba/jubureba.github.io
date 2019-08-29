@@ -8,7 +8,7 @@ import Resume from './resume';
 
 
 
-const Main = () => (   
+const Main = () => (
     <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route path="/aboutme" component={AboutMe} />
