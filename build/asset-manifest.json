@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/jubureba.github.io/build/static/css/main.c4e3f652.chunk.css",
-    "main.js": "/jubureba.github.io/build/static/js/main.820011b9.chunk.js",
-    "main.js.map": "/jubureba.github.io/build/static/js/main.820011b9.chunk.js.map",
+    "main.css": "/jubureba.github.io/build/static/css/main.5ab4f0d9.chunk.css",
+    "main.js": "/jubureba.github.io/build/static/js/main.9256f328.chunk.js",
+    "main.js.map": "/jubureba.github.io/build/static/js/main.9256f328.chunk.js.map",
     "runtime~main.js": "/jubureba.github.io/build/static/js/runtime~main.ac11a6a9.js",
     "runtime~main.js.map": "/jubureba.github.io/build/static/js/runtime~main.ac11a6a9.js.map",
     "static/css/2.60a6b8e0.chunk.css": "/jubureba.github.io/build/static/css/2.60a6b8e0.chunk.css",
-    "static/js/2.1e1934df.chunk.js": "/jubureba.github.io/build/static/js/2.1e1934df.chunk.js",
-    "static/js/2.1e1934df.chunk.js.map": "/jubureba.github.io/build/static/js/2.1e1934df.chunk.js.map",
+    "static/js/2.ffac420d.chunk.js": "/jubureba.github.io/build/static/js/2.ffac420d.chunk.js",
+    "static/js/2.ffac420d.chunk.js.map": "/jubureba.github.io/build/static/js/2.ffac420d.chunk.js.map",
     "index.html": "/jubureba.github.io/build/index.html",
-    "precache-manifest.650cf72a8a59cd6de13e76458be112b0.js": "/jubureba.github.io/build/precache-manifest.650cf72a8a59cd6de13e76458be112b0.js",
+    "precache-manifest.0de1d8b862863ad07c412e86777c5b7f.js": "/jubureba.github.io/build/precache-manifest.0de1d8b862863ad07c412e86777c5b7f.js",
     "service-worker.js": "/jubureba.github.io/build/service-worker.js",
     "static/css/2.60a6b8e0.chunk.css.map": "/jubureba.github.io/build/static/css/2.60a6b8e0.chunk.css.map",
-    "static/css/main.c4e3f652.chunk.css.map": "/jubureba.github.io/build/static/css/main.c4e3f652.chunk.css.map",
+    "static/css/main.5ab4f0d9.chunk.css.map": "/jubureba.github.io/build/static/css/main.5ab4f0d9.chunk.css.map",
     "static/media/Login.gif": "/jubureba.github.io/build/static/media/Login.d1727915.gif"
   }
 }

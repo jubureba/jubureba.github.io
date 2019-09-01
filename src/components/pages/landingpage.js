@@ -4,8 +4,7 @@ import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } f
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
-//Import Imgs
-import Logo from '../../components/img/Login.gif';
+
 
 const customStyles = {
     content : {
@@ -14,9 +13,10 @@ const customStyles = {
       right                 : 'auto',
       bottom                : 'auto',
       marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)'
+      transform             : 'translate(-50%, -50%)',
     }
   };
+  
 
 class Landing extends Component {
     constructor() {
@@ -37,7 +37,7 @@ class Landing extends Component {
     
       afterOpenModal() {
         // references are now sync'd and can be accessed.
-        this.subtitle.style.color = '#f00';
+        this.subtitle.style.color = '#000';
       }
     
       closeModal() {
@@ -103,21 +103,22 @@ class Landing extends Component {
                             <Grid className="demo-grid-ruler">
                                 <Cell className="cell" col={1}>
                                     <div className="containerProject">
-                                        <img src="https://i.imgur.com/gyzFkFE.jpg" className="imgProjects" alt="Project React Js for portfolio" />
+                                        <img src={require('./../img/Login.gif')} className="imgProjects" alt="C# System | WPF | EntityFramework | Linq" />
+                                        <div class="desc">C# System | WPF | EntityFramework | Linq</div>
                                         <div className="middle">
-                                            <div className="text"><a href="#" onClick={this.openModal}>React Js Portfolio</a></div>
-                                            <Modal
+                                            <div className="text"><a href="#" onClick={this.openModal}>Details</a></div>
+                                            <Modal 
                                                 isOpen={this.state.modalIsOpen}
                                                 onAfterOpen={this.afterOpenModal}
                                                 onRequestClose={this.closeModal}
                                                 style={customStyles}
                                                 contentLabel="Example Modal">
-                                                    <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
-                                                    <imagem src={Logo} alt="loading..."/>
+                                                    <div className="Modal">
+                                                    <h2 ref={subtitle => this.subtitle = subtitle}>C# System | WPF | EntityFramework | Linq</h2>
+                                                    <img width="600" height="500" src={require('./../img/Login.gif')} />
                                                    
                                                     <button onClick={this.closeModal}>close</button>
-                                                    
-                                                    
+                                                    </div>
                                                 </Modal>
                                         </div>
                                     </div>

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1390def140afacc30bd865a057a7f00c",
+    "revision": "0c92a6941657ec5e349cc4b0ea623603",
     "url": "/jubureba.github.io/build/index.html"
   },
   {
-    "revision": "371f94c9b025401df267",
+    "revision": "73e8700bab413e423941",
     "url": "/jubureba.github.io/build/static/css/2.60a6b8e0.chunk.css"
   },
   {
-    "revision": "f253fab151df815e6200",
-    "url": "/jubureba.github.io/build/static/css/main.c4e3f652.chunk.css"
+    "revision": "1cc29abafdf0f8cdd664",
+    "url": "/jubureba.github.io/build/static/css/main.5ab4f0d9.chunk.css"
   },
   {
-    "revision": "371f94c9b025401df267",
-    "url": "/jubureba.github.io/build/static/js/2.1e1934df.chunk.js"
+    "revision": "73e8700bab413e423941",
+    "url": "/jubureba.github.io/build/static/js/2.ffac420d.chunk.js"
   },
   {
-    "revision": "f253fab151df815e6200",
-    "url": "/jubureba.github.io/build/static/js/main.820011b9.chunk.js"
+    "revision": "1cc29abafdf0f8cdd664",
+    "url": "/jubureba.github.io/build/static/js/main.9256f328.chunk.js"
   },
   {
     "revision": "aa5ecd081ec8a64c58d3",
