@@ -1,13 +1,53 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
+
+//Import Imgs
+import Logo from '../../components/img/Login.gif';
+
+const customStyles = {
+    content : {
+      top                   : '50%',
+      left                  : '50%',
+      right                 : 'auto',
+      bottom                : 'auto',
+      marginRight           : '-50%',
+      transform             : 'translate(-50%, -50%)'
+    }
+  };
 
 class Landing extends Component {
-
+    constructor() {
+        super();
+    
+        this.state = {
+          modalIsOpen: false
+        };
+    
+        this.openModal = this.openModal.bind(this);
+        this.afterOpenModal = this.afterOpenModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+      }
+    
+      openModal() {
+        this.setState({modalIsOpen: true});
+      }
+    
+      afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        this.subtitle.style.color = '#f00';
+      }
+    
+      closeModal() {
+        this.setState({modalIsOpen: false});
+      }
 
     render() {
         return (
             <div style={{ width: '100%', margin: 'auto' }}>
+
                 <Element name="resume" className="resume" ></Element>
                 <div id="RESUME" className="landing-grid" >
                     <div className="backgroundImg">
@@ -65,7 +105,20 @@ class Landing extends Component {
                                     <div className="containerProject">
                                         <img src="https://i.imgur.com/gyzFkFE.jpg" className="imgProjects" alt="Project React Js for portfolio" />
                                         <div className="middle">
-                                            <div className="text"><a href="#">React Js Portfolio</a></div>
+                                            <div className="text"><a href="#" onClick={this.openModal}>React Js Portfolio</a></div>
+                                            <Modal
+                                                isOpen={this.state.modalIsOpen}
+                                                onAfterOpen={this.afterOpenModal}
+                                                onRequestClose={this.closeModal}
+                                                style={customStyles}
+                                                contentLabel="Example Modal">
+                                                    <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
+                                                    <imagem src={Logo} alt="loading..."/>
+                                                   
+                                                    <button onClick={this.closeModal}>close</button>
+                                                    
+                                                    
+                                                </Modal>
                                         </div>
                                     </div>
 
@@ -261,7 +314,10 @@ class Landing extends Component {
                 </div>
             </div>
         )
+
+
     }
 }
+
 
 export default Landing;

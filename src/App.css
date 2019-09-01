@@ -231,6 +231,14 @@ header.smaller nav a {
 
 /* ================================================================================================*/
 
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
 .divProjects {
   position: relative;
   width: 100%;
