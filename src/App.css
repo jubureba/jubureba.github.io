@@ -12,10 +12,7 @@
 
 /* ================================================================================================*/
 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css?family=News+Cycle&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Nunito|News+Cycle|Tajawal|Anton|Josefin+Sans|Oswald|Oxygen|Poppins|Titillium+Web|Ubuntu&display=swap');
 .backgroundImg {
   width: 100%;
   height: 100%;
@@ -27,7 +24,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .landing-grid {
@@ -271,18 +267,44 @@ header.smaller nav a {
   height: 200px;
   transition: .5s ease;
   backface-visibility: hidden;
+  border: solid 3px rgb(223, 223, 223);
 }
 
 .desc {
   padding: 15px;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  background-color: white;
-  border: solid 1px #d1d1d1;
+  background-color: rgb(223, 223, 223);
+  
 }
 
-.Modal {
-   
+.CloseDetails {
+  margin: 20px;
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.CloseDetails:hover {
+  color: #404040 !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease 0s;
+}
+
+.cell a {
+  cursor: pointer;
 }
 
 .containerProject {
@@ -302,7 +324,6 @@ header.smaller nav a {
   -ms-transform: translate(-50%, -50%);
 }
 
-
 .containerProject:hover .imgProjects {
   opacity: 0.5;
 }
@@ -311,20 +332,30 @@ header.smaller nav a {
   opacity: 1;
 }
 
-.text {}
 
 .text a {
-  text-decoration: none;
-  background-color: rgb(35, 34, 119);
-  color: white;
-  font-size: 16px;
-  padding: 16px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -150%)
+  margin: 20px;
+  margin-top: 70px;
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.text a:hover {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  letter-spacing:7px;
+  background: rgba(43, 10, 121, 0.57);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.795);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.795);
+  transition: all 0.3s ease 0s;
 }
 
 /* ================================================================================================*/
@@ -455,7 +486,6 @@ header.smaller nav a {
 
 /* ================================================================================================*/
 
-
 .findmeDiv {
   background-color: #0f0c29;
   width: 100%;
@@ -466,7 +496,7 @@ header.smaller nav a {
   padding-bottom: 50px;
 }
 
-.h1findme  {
+.h1findme {
   font-size: 40px;
   color: #fff;
   font-family: 'Josefin Sans', cursive;
@@ -487,19 +517,22 @@ header.smaller nav a {
   border-radius: 10%;
   padding: 30px;
 }
+
 .mapa {
   width: 100%;
   position: relative;
   margin-left: 50%;
   padding-bottom: 5%;
 }
+
 .mapa h1 {
   font-size: 33px;
   color: white;
   padding: 0;
   margin: 0;
 }
-.mapa h2{
+
+.mapa h2 {
   font-size: 25px;
   color: white;
   padding: 0;
@@ -509,32 +542,71 @@ header.smaller nav a {
 .socialnet {
   display: inline-block;
   position: relative;
-  width:  100%;
+  width: 100%;
   margin-left: 50%;
 }
+
 .socialnet h1 {
   font-size: 33px;
   color: white;
   padding: 0;
-  margin: 0 0 30px 0; 
+  margin: 0 0 30px 0;
 }
+
 .socialnet i {
   color: white;
   font-size: 25px;
   width: 20px;
   height: 20px;
-  
 }
+
 .socialnet a {
   margin-right: 10px;
-  
-  
 }
 
+/*======= MODAL ================*/
 
+.Modal {
+  background: white;
+  padding: 0;
+  margin: 0;
+}
 
+.Modal h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
 
+.Modal hr {
+  border-top: 5px groove black;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
 
+.Modal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.Modal Button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: #2255c2;
+}
+
+.Modal p {
+  font-size: 14pt;
+  font-family: 'Poppins', sans-serif;
+  width: 50%;
+  text-justify: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* ================================================================================================*/
 

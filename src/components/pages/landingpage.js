@@ -5,48 +5,49 @@ import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
 
-
 const customStyles = {
-    content : {
-      top                   : '50%',
-      left                  : '50%',
-      right                 : 'auto',
-      bottom                : 'auto',
-      marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)',
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
     }
-  };
-  
+};
+
 
 class Landing extends Component {
     constructor() {
         super();
-    
+
         this.state = {
-          modalIsOpen: false
+            modalIsOpen: false
         };
-    
+
         this.openModal = this.openModal.bind(this);
         this.afterOpenModal = this.afterOpenModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
-      }
-    
-      openModal() {
-        this.setState({modalIsOpen: true});
-      }
-    
-      afterOpenModal() {
+    }
+
+    openModal() {
+        this.setState({ modalIsOpen: true });
+    }
+
+    afterOpenModal() {
         // references are now sync'd and can be accessed.
         this.subtitle.style.color = '#000';
-      }
-    
-      closeModal() {
-        this.setState({modalIsOpen: false});
-      }
+    }
+
+    closeModal() {
+        this.setState({ modalIsOpen: false });
+    }
 
     render() {
         return (
+
             <div style={{ width: '100%', margin: 'auto' }}>
+                
 
                 <Element name="resume" className="resume" ></Element>
                 <div id="RESUME" className="landing-grid" >
@@ -106,105 +107,82 @@ class Landing extends Component {
                                         <img src={require('./../img/Login.gif')} className="imgProjects" alt="C# System | WPF | EntityFramework | Linq" />
                                         <div class="desc">C# System | WPF | EntityFramework | Linq</div>
                                         <div className="middle">
-                                            <div className="text"><a href="#" onClick={this.openModal}>Details</a></div>
-                                            <Modal 
+                                            <div className="text"><a onClick={this.openModal}>Details</a></div>
+                                            <Modal
                                                 isOpen={this.state.modalIsOpen}
                                                 onAfterOpen={this.afterOpenModal}
                                                 onRequestClose={this.closeModal}
                                                 style={customStyles}
                                                 contentLabel="Example Modal">
-                                                    <div className="Modal">
+                                                <div className="Modal">
                                                     <h2 ref={subtitle => this.subtitle = subtitle}>C# System | WPF | EntityFramework | Linq</h2>
-                                                    <img width="600" height="500" src={require('./../img/Login.gif')} />
-                                                   
-                                                    <button onClick={this.closeModal}>close</button>
-                                                    </div>
-                                                </Modal>
+                                                    <hr/>
+            
+                                                            <img width="600" height="500" src={require('./../img/Login.gif')} />
+                            
+                                                    <hr/>
+                                                    <p>System developed in Visual Studio 2017 using ORM Entity Framework, Linq, WPF GUI with animations</p>
+                                                    <div class="button_cont" align="center"><a class="CloseDetails" onClick={this.closeModal} rel="Close">Back to Home Page</a></div>
+                                                </div>
+                                            </Modal>
                                         </div>
                                     </div>
 
                                 </Cell>
                                 <Cell className="cell" col={1}>
                                     <div className="containerProject">
-                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <img src={require('./../img/System01.jpg')} className="imgProjects" alt="C# System | WPF | EntityFramework | Linq" />
+                                        <div class="desc">C# System | WPF | EntityFramework | Linq</div>
                                         <div className="middle">
-                                            <div className="text"><a href="#">PROJECT2</a></div>
+                                            <div className="text"><a onClick={this.openModal}>Details</a></div>
+                                            
+                                            <Modal
+                                                isOpen={this.state.modalIsOpen}
+                                                onAfterOpen={this.afterOpenModal}
+                                                onRequestClose={this.closeModal}
+                                                style={customStyles}
+                                                contentLabel="Example Modal">
+                                                <div className="Modal">
+                                                    <h2 ref={subtitle => this.subtitle = subtitle}>C# System | WPF | EntityFramework | Linq</h2>
+                                                    <hr/>
+            
+                                                            <img width="600" height="500" src={require('./../img/System01.jpg')} />
+                            
+                                                    <hr/>
+                                                    <p>System developed in Visual Studio 2017 using ORM Entity Framework, Linq, WPF GUI with animations</p>
+                                                    <div class="button_cont" align="center"><a class="CloseDetails" onClick={this.closeModal} rel="Close">Back to Home Page</a></div>
+                                                </div>
+                                            </Modal>
                                         </div>
                                     </div>
 
                                 </Cell>
                                 <Cell className="cell" col={1}>
                                     <div className="containerProject">
-                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <img src={require('./../img/System02.jpg')} className="imgProjects" alt="C# System | WPF | EntityFramework | Linq" />
+                                        <div class="desc">PHP System | AdminLTE 2 | PostgreSQL | Bootstrap</div>
                                         <div className="middle">
-                                            <div className="text"><a href="#">PROJECT3</a></div>
+                                            <div className="text"><a onClick={this.openModal}>Details</a></div>
+                                            
+                                            
                                         </div>
                                     </div>
 
                                 </Cell>
+
                                 <Cell className="cell" col={1}>
                                     <div className="containerProject">
-                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
+                                        <img src={require('./../img/System03.jpg')} className="imgProjects" alt="C# System | WPF | EntityFramework | Linq" />
+                                        <div class="desc">Java System | GUI in Swing | PhpMyAdmin</div>
                                         <div className="middle">
-                                            <div className="text"><a href="#">PROJECT4</a></div>
+                                            <div className="text"><a onClick={this.openModal}>Details</a></div>
+                                            
+                                            
                                         </div>
                                     </div>
 
                                 </Cell>
-                                <Cell className="cell" col={1}>
-                                    <div className="containerProject">
-                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                        <div className="middle">
-                                            <div className="text"><a href="#">PROJECT5</a></div>
-                                        </div>
-                                    </div>
-
-                                </Cell>
-                                <Cell className="cell" col={1}>
-                                    <div className="containerProject">
-                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                        <div className="middle">
-                                            <div className="text"><a href="#">PROJECT6</a></div>
-                                        </div>
-                                    </div>
-
-                                </Cell>
-                                <Cell className="cell" col={1}>
-                                    <div className="containerProject">
-                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                        <div className="middle">
-                                            <div className="text"><a href="#">PROJECT7</a></div>
-                                        </div>
-                                    </div>
-
-                                </Cell>
-                                <Cell className="cell" col={1}>
-                                    <div className="containerProject">
-                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                        <div className="middle">
-                                            <div className="text"><a href="#">PROJECT8</a></div>
-                                        </div>
-                                    </div>
-
-                                </Cell>
-                                <Cell className="cell" col={1}>
-                                    <div className="containerProject">
-                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                        <div className="middle">
-                                            <div className="text"><a href="#">PROJECT9</a></div>
-                                        </div>
-                                    </div>
-
-                                </Cell>
-                                <Cell className="cell" col={1}>
-                                    <div className="containerProject">
-                                        <img src="https://www.w3schools.com/css/img_avatar.png" className="imgProjects" alt="Avatar" />
-                                        <div className="middle">
-                                            <div className="text"><a href="#">PROJECT</a></div>
-                                        </div>
-                                    </div>
-
-                                </Cell>
+                               
 
                             </Grid>
 
@@ -316,9 +294,8 @@ class Landing extends Component {
             </div>
         )
 
-
+     
     }
 }
-
 
 export default Landing;
