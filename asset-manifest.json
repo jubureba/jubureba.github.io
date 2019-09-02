@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/jubureba.github.io/build/static/css/main.5ab4f0d9.chunk.css",
-    "main.js": "/jubureba.github.io/build/static/js/main.9256f328.chunk.js",
-    "main.js.map": "/jubureba.github.io/build/static/js/main.9256f328.chunk.js.map",
+    "main.css": "/jubureba.github.io/build/static/css/main.9a3d77d5.chunk.css",
+    "main.js": "/jubureba.github.io/build/static/js/main.6516365d.chunk.js",
+    "main.js.map": "/jubureba.github.io/build/static/js/main.6516365d.chunk.js.map",
     "runtime~main.js": "/jubureba.github.io/build/static/js/runtime~main.ac11a6a9.js",
     "runtime~main.js.map": "/jubureba.github.io/build/static/js/runtime~main.ac11a6a9.js.map",
     "static/css/2.60a6b8e0.chunk.css": "/jubureba.github.io/build/static/css/2.60a6b8e0.chunk.css",
-    "static/js/2.ffac420d.chunk.js": "/jubureba.github.io/build/static/js/2.ffac420d.chunk.js",
-    "static/js/2.ffac420d.chunk.js.map": "/jubureba.github.io/build/static/js/2.ffac420d.chunk.js.map",
+    "static/js/2.d1d75429.chunk.js": "/jubureba.github.io/build/static/js/2.d1d75429.chunk.js",
+    "static/js/2.d1d75429.chunk.js.map": "/jubureba.github.io/build/static/js/2.d1d75429.chunk.js.map",
     "index.html": "/jubureba.github.io/build/index.html",
-    "precache-manifest.0de1d8b862863ad07c412e86777c5b7f.js": "/jubureba.github.io/build/precache-manifest.0de1d8b862863ad07c412e86777c5b7f.js",
+    "precache-manifest.11eaee73fc4847403f6119ce21a6131f.js": "/jubureba.github.io/build/precache-manifest.11eaee73fc4847403f6119ce21a6131f.js",
     "service-worker.js": "/jubureba.github.io/build/service-worker.js",
     "static/css/2.60a6b8e0.chunk.css.map": "/jubureba.github.io/build/static/css/2.60a6b8e0.chunk.css.map",
-    "static/css/main.5ab4f0d9.chunk.css.map": "/jubureba.github.io/build/static/css/main.5ab4f0d9.chunk.css.map",
-    "static/media/Login.gif": "/jubureba.github.io/build/static/media/Login.d1727915.gif"
+    "static/css/main.9a3d77d5.chunk.css.map": "/jubureba.github.io/build/static/css/main.9a3d77d5.chunk.css.map",
+    "static/media/Login.gif": "/jubureba.github.io/build/static/media/Login.d1727915.gif",
+    "static/media/System01.jpg": "/jubureba.github.io/build/static/media/System01.fcbb991b.jpg",
+    "static/media/System02.jpg": "/jubureba.github.io/build/static/media/System02.a6f52ff5.jpg",
+    "static/media/System03.jpg": "/jubureba.github.io/build/static/media/System03.4b00a48a.jpg"
   }
 }
