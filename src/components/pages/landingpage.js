@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import ReactDOM from 'react-dom';
+
 import Modal from 'react-modal';
 
 
@@ -45,10 +46,7 @@ class Landing extends Component {
 
     render() {
         return (
-
-            <div style={{ width: '100%', margin: 'auto' }}>
-                
-
+            <div >
                 <Element name="resume" className="resume" ></Element>
                 <div id="RESUME" className="landing-grid" >
                     <div className="backgroundImg">
@@ -70,25 +68,25 @@ class Landing extends Component {
 
                             <div className="social-links">
                                 {/* LinkedIn */}
-                                <a href="https://www.linkedin.com/in/jubureba/" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-linkedin" aria-hidden="true" />
-                                </a>
+                              
+                                <a href="https://www.linkedin.com/in/jubureba/" class="icon-button linkedin" target="_blank">
+                                    <i class="fa fa-linkedin"></i><span></span></a>
 
                                 {/* Facebook */}
-                                <a href="https://facebook.com/jubureba/" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-facebook-f" aria-hidden="true" />
-                                </a>
+                                <a href="https://facebook.com/jubureba/" class="icon-button facebook" target="_blank">
+                                    <i class="icon-facebook"></i><span></span></a>
 
                                 {/* GitHub */}
-                                <a href="http://github.com/jubureba" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-fw fa-github" aria-hidden="true" />
-                                </a>
-
+                                <a href="http://github.com/jubureba" class="icon-button github" target="_blank">
+                                    <i class="icon-github"></i><span></span></a>
 
                                 {/* Youtube */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-youtube" aria-hidden="true" />
-                                </a>
+                                <a href="#" class="icon-button youtube">
+                                    <i class="fa fa-youtube"></i><span></span></a>
+                                {/* TWITTER */}
+                                <a href="https://twitter.com/jubureba" class="icon-button twitter">
+                                    <i class="icon-twitter"></i><span></span></a>
+                                
 
                             </div>
                         </div>
@@ -182,6 +180,19 @@ class Landing extends Component {
                                     </div>
 
                                 </Cell>
+
+                                <Cell className="cell" col={1}>
+                                    <div className="containerProject">
+                                        <img src={require('./../img/SystemReact.gif')} className="imgProjects" alt="Website Portfolio in React JS | DOM | GitHub" />
+                                        <div class="desc">Website Portfolio in React JS | DOM | GitHub</div>
+                                        <div className="middle">
+                                            <div className="text"><a onClick={this.openModal}>Details</a></div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+
+                                </Cell>
                                
 
                             </Grid>
@@ -196,9 +207,13 @@ class Landing extends Component {
                         <div className="aboutmediv">
                             <h1>ABOUT ME</h1>
                             <hr />
-                            <p>Full Stack C# Developer using WPF, ENTITYFRAMEWORK, SQLServer.
-                                Experienced in building CRUD applications, REST APIs using Node.js and express.
-                                bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla bla
+                            <p>Lover of technology and programming of systems and games;<br/>
+                                Unity developer by hobbie in his spare time;<br/>
+                                Full Stack C # Developer using WPF, ENTITYFRAMEWORK, SQLServer;<br/>
+                                Experienced in building CRUD applications;<br/>
+
+                                Currently studying API Rest, React, React Native, NodeJS, MongoDB, ORM Express.
+                                
                             </p>
                         </div>
                     </div>
@@ -292,9 +307,9 @@ class Landing extends Component {
 
                 </div>
             </div>
+        
+        
         )
-
-     
     }
 }
 
