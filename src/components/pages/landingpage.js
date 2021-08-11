@@ -1,29 +1,32 @@
+import "react-responsive-modal/styles.css";
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import { Element, animateScroll } from 'react-scroll'
 import { properties } from '../utils/properties.js';
 import { imagens } from '../utils/imgs.js';
-import "react-responsive-modal/styles.css";
 import { Modal } from 'react-responsive-modal';
+import { Zoom } from 'react-slideshow-image';
 
-const styles = {
-    fontFamily: "sans-serif",
-    textAlign: "center"
+const zoomOutProperties = {
+    duration: 30000,
+    transitionDuration: 500,
+    infinite: true,
+    indicators: true,
+    scale: 0.4,
+    arrows: true
 };
 
 class Landing extends Component {
     constructor(props) {
         super(props);
-
+        
         this.state = {
             modalIsOpen: false,
             open: false,
-            titleModal: "null"
+            pic: [],
         };
-
-        this.state = { title: properties.desc_system01 }
     }
-
+    //SETA OS CAMPOS TITULO, IMG, E CONTEUDO DO MODAL
     changeContent = (title, pic, content) => {
         this.setState({
             title: title,
@@ -37,22 +40,23 @@ class Landing extends Component {
             open: true,
             modalId
         });
+
         if (modalId == 1)
-            this.changeContent(properties.desc_system01, imagens.system01, properties.desc_compl_system01);
+            this.changeContent(properties.desc_system01, [imagens.system01, imagens.system02], properties.desc_compl_system01);
         if (modalId == 2)
-            this.changeContent(properties.desc_system02, imagens.system02, properties.desc_compl_system02);
+            this.changeContent(properties.desc_system02, [imagens.system02], properties.desc_compl_system02);
         if (modalId == 3)
-            this.changeContent(properties.desc_system03, imagens.system03, properties.desc_compl_system03);
+            this.changeContent(properties.desc_system03, [imagens.system03], properties.desc_compl_system03);
         if (modalId == 4)
-            this.changeContent(properties.desc_system04, imagens.system04, properties.desc_compl_system04);
+            this.changeContent(properties.desc_system04, [imagens.system04], properties.desc_compl_system04);
         if (modalId == 5)
-            this.changeContent(properties.desc_system05, imagens.system05, properties.desc_compl_system05);
+            this.changeContent(properties.desc_system05, [imagens.system05], properties.desc_compl_system05);
     };
 
     onCloseModal = () => {
         this.setState({
             open: false,
-            
+
         });
     };
 
@@ -62,6 +66,8 @@ class Landing extends Component {
 
     render() {
         const { open } = this.state;
+
+
         return (<div >
             <Element name="resume" className="resume" ></Element>
 
@@ -173,7 +179,7 @@ class Landing extends Component {
                         <h1 className="topics">{properties.sobre_mim}</h1>
                         <hr />
                         <p>
-                             {properties.desc_compl_sobre_mim}
+                            {properties.desc_compl_sobre_mim}
 
                         </p>
                     </div>
@@ -215,7 +221,7 @@ class Landing extends Component {
                                 <div className="mapa">
                                     <h1 >CURRENT LOCATION:</h1>
                                     <h2>Belém, PA</h2>
-                                    <iframe className="mapLocal" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=pedro%20miranda%20792+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"  scrolling="no"></iframe>
+                                    <iframe className="mapLocal" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=pedro%20miranda%20792+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" scrolling="no"></iframe>
                                 </div>
                             </Cell>
 
@@ -267,15 +273,25 @@ class Landing extends Component {
             </div>
 
 
-            <Modal open={open} onClose={this.onCloseModal} 
-                closeOnOverlayClick={this.onCloseModal} 
-                closeOnEsc={this.onCloseModal} 
-                showCloseIcon={this.onCloseModal}> 
-                
+            <Modal open={open} onClose={this.onCloseModal}
+                closeOnOverlayClick={this.onCloseModal}
+                closeOnEsc={this.onCloseModal}
+                showCloseIcon={this.onCloseModal}>
+
                 <h3 >{this.state.title}</h3>
                 <hr />
 
-                <img width="600" height="500" src={this.state.pic} />
+                {/* <img width="600" height="500" src={this.state.pic} /> */}
+
+                <div className="slide-container">
+                    <Zoom {...zoomOutProperties} >
+                        {this.state.pic.map((each, index) => (
+                            <img key={index} style={{ width: "100%" }} src={each} />
+                        ))}
+                    </Zoom>
+                </div>
+
+
 
                 <hr />
                 <p>{this.state.content}</p>

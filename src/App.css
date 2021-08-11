@@ -14,7 +14,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Nunito|News+Cycle|Tajawal|Anton|Josefin+Sans|Oswald|Oxygen|Poppins|Titillium+Web|Ubuntu&display=swap');
 @import url('https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css');
+@import "react-slideshow-image/dist/styles.css";
 
+.modal-style {
+  width: 600px;
+  height: 500px;
+  background-size: 600px 500px;
+}
 .backgroundImg {
   width: 100%;
   height: 100%;
