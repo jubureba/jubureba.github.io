@@ -61,7 +61,7 @@ class Landing extends Component {
     };
 
     componentDidMount() {
-        document.title = "Anderson Lima | 1.0.0.0"
+        document.title = "Anderson Lima | 1.0.0.1"
     }
 
     render() {
