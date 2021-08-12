@@ -347,7 +347,8 @@ header.smaller nav a {
 }
 
 .cell {
-  padding-right: 20em;
+  padding-right: 280px;
+  padding-bottom: 80px;
 }
 
 .imgProjects {
@@ -743,13 +744,10 @@ header.smaller nav a {
   .social-links {
     display: flex;
     justify-content: space-between;
-    width: 50%;
     margin: auto;
   }
   .social-links i {
-    color: white;
     font-size: 15px;
-    padding: 8px;
   }
   .social-links a {
     border: 1px solid white;
@@ -790,14 +788,15 @@ header.smaller nav a {
     line-height: 35px;
   }
   .imgProjects {
-    width: 150px;
+   
+    width: 300px;
     height: 150px;
     transition: .5s ease;
     backface-visibility: hidden;
   }
   .containerProject {
     position: relative;
-    width: 150px;
+    width: 300px;
   }
   .mapLocal {
     height: 300px;
