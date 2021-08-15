@@ -1,6 +1,7 @@
 export const properties = {
+
     title: "Anderson Lima ",
-    versao: "1.0.0.0",
+    versao: "1.0.0.1",
 
     //labels
     content: "This is a string",
@@ -24,8 +25,8 @@ export const properties = {
     desc_system04: "Java System | GUI in Swing | PhpMyAdmin",
     desc_system05: "Website Portfolio in React JS | DOM | GitHub",
 
-    desc_compl_system01: "System developed in Visual Studio 2017 using ORM Entity Framework, Linq, WPF GUI with animations",
-    desc_compl_system02: "System Descricao 02",
+    desc_compl_system01: "✔ Tela de Logon: \n    - Desenvolvida em C#, WPF e ENTITY FRAMEWORK. \n    - Visual Studio 2017 \n✔ Estudos de animações em WPF. \n✔ Link: https://github.com/jubureba/CRUD-WPF-ENTITYFRAMEWORK",
+    desc_compl_system02: "Sistema de controle de estoque desenvolvido em C#, utilizando WPF e ENTITY FRAMEWORK.\nSistemas tem várias telas de cadastros, como cliente, produto, fornecedor, etc. \nE uma tela de PDV para registrar a saída de produtos. O sistema conta com uma dashboard mostrando as informações principais cadastradas.", 
     desc_compl_system03: "System Descricao 03",
     desc_compl_system04: "System Descricao 04",
     desc_compl_system05: "System Descricao 05",

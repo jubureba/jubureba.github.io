@@ -1,29 +1,19 @@
-import "react-responsive-modal/styles.css";
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import { Element, animateScroll } from 'react-scroll'
+import { Element } from 'react-scroll'
 import { properties } from '../utils/properties.js';
 import { imagens } from '../utils/imgs.js';
-import { Modal } from 'react-responsive-modal';
-import { Zoom } from 'react-slideshow-image';
-
-const zoomOutProperties = {
-    duration: 30000,
-    transitionDuration: 500,
-    infinite: true,
-    indicators: true,
-    scale: 0.4,
-    arrows: true
-};
+import ModalContent from "./utils/ModalContent.js";
 
 class Landing extends Component {
     constructor(props) {
         super(props);
         
         this.state = {
-            modalIsOpen: false,
             open: false,
             pic: [],
+            title: '',
+            content: ''
         };
     }
     //SETA OS CAMPOS TITULO, IMG, E CONTEUDO DO MODAL
@@ -35,38 +25,33 @@ class Landing extends Component {
         });
     }
     // MONTAR MODAL CONTENT
-    onOpenModal(modalId) {
+    onOpenModal(id) {
         this.setState({
             open: true,
-            modalId
+            id
         });
-
-        if (modalId == 1)
-            this.changeContent(properties.desc_system01, [imagens.system01, imagens.system02], properties.desc_compl_system01);
-        if (modalId == 2)
+        if (id == 1)
+            this.changeContent(properties.desc_system01, [imagens.system01], properties.desc_compl_system01);
+        if (id == 2)
             this.changeContent(properties.desc_system02, [imagens.system02], properties.desc_compl_system02);
-        if (modalId == 3)
+        if (id == 3)
             this.changeContent(properties.desc_system03, [imagens.system03], properties.desc_compl_system03);
-        if (modalId == 4)
+        if (id == 4)
             this.changeContent(properties.desc_system04, [imagens.system04], properties.desc_compl_system04);
-        if (modalId == 5)
+        if (id == 5)
             this.changeContent(properties.desc_system05, [imagens.system05], properties.desc_compl_system05);
+        if (id == 6)
+            this.changeContent(properties.desc_system06, [imagens.system06_1, imagens.system06_2, imagens.system06_3], properties.desc_compl_system06);
+        if (id == 7)
+            this.changeContent(properties.desc_system07, [imagens.system07_1, imagens.system07_2], properties.desc_compl_system07);
+            
     };
 
-    onCloseModal = () => {
-        this.setState({
-            open: false,
+    onCloseModal = () => { this.setState({ open: false }); };
 
-        });
-    };
-
-    componentDidMount() {
-        document.title = "Anderson Lima | 1.0.0.1"
-    }
+    componentDidMount() { document.title = properties.title + ' | ' + properties.versao }
 
     render() {
-        const { open } = this.state;
-
 
         return (<div >
             <Element name="resume" className="resume" ></Element>
@@ -158,6 +143,32 @@ class Landing extends Component {
                                     <div className="desc">{properties.desc_system05}</div>
                                     <div className="middle">
                                         <div className="text"><a onClick={() => this.onOpenModal(5)}>{properties.detalhes}</a></div>
+
+
+                                    </div>
+                                </div>
+
+                            </Cell>
+
+                            <Cell className="cell" col={1}>
+                                <div className="containerProject">
+                                    <img src={imagens.system06_1} className="imgProjects" />
+                                    <div className="desc">{properties.desc_system06}</div>
+                                    <div className="middle">
+                                        <div className="text"><a onClick={() => this.onOpenModal(6)}>{properties.detalhes}</a></div>
+
+
+                                    </div>
+                                </div>
+
+                            </Cell>
+
+                            <Cell className="cell" col={1}>
+                                <div className="containerProject">
+                                    <img src={imagens.system07_1} className="imgProjects" />
+                                    <div className="desc">{properties.desc_system07}</div>
+                                    <div className="middle">
+                                        <div className="text"><a onClick={() => this.onOpenModal(7)}>{properties.detalhes}</a></div>
 
 
                                     </div>
@@ -272,32 +283,13 @@ class Landing extends Component {
 
             </div>
 
-
-            <Modal open={open} onClose={this.onCloseModal}
-                closeOnOverlayClick={this.onCloseModal}
-                closeOnEsc={this.onCloseModal}
-                showCloseIcon={this.onCloseModal}>
-
-                <h3 >{this.state.title}</h3>
-                <hr />
-
-                {/* <img width="600" height="500" src={this.state.pic} /> */}
-
-                <div className="slide-container">
-                    <Zoom {...zoomOutProperties} >
-                        {this.state.pic.map((each, index) => (
-                            <img key={index} style={{ width: "100%" }} src={each} />
-                        ))}
-                    </Zoom>
-                </div>
-
-
-
-                <hr />
-                <p>{this.state.content}</p>
-
-                <div className="button_cont" align="center"><a className="CloseDetails" onClick={this.onCloseModal} rel="Close">Back to Home Page</a></div>
-            </Modal>
+            <ModalContent 
+                open= {this.state.open}
+                pic= {this.state.pic}
+                onCloseModal= {this.onCloseModal}
+                title= {this.state.title}
+                content= {this.state.content}
+            />
         </div>
 
         )
