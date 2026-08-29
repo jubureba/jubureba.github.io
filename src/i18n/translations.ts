@@ -50,12 +50,14 @@ export interface Translation {
     subtitle: string
     viewCode: string
     viewLive: string
+    privateLabel: string
     items: {
       name: string
       description: string
       tags: string[]
-      repo: string
+      repo?: string
       live?: string
+      isPrivate?: boolean
     }[]
   }
   contact: {
@@ -213,50 +215,51 @@ export const translations: Record<Language, Translation> = {
         'Uma seleção de projetos pessoais e open source do meu GitHub.',
       viewCode: 'Ver código',
       viewLive: 'Ver online',
+      privateLabel: 'Privado',
       items: [
         {
-          name: 'ChangeVersionJava',
+          name: 'Cortaí',
           description:
-            'App desktop para quem cansou de trocar a variável de ambiente do Java na mão. Alterna a versão do Java pelo sistema com poucos cliques.',
-          tags: ['C#', 'WPF', '.NET Framework'],
-          repo: 'https://github.com/jubureba/ChangeVersionJava',
+            'SaaS que transforma vídeos longos (podcasts, lives, aulas) em clips curtos e virais usando IA. Arquitetura de microsserviços event-driven: transcrição com Whisper, detecção dos melhores momentos com Gemini e renderização com FFmpeg. App em Flutter (mobile e web) e pagamentos via Mercado Pago.',
+          tags: ['Flutter', 'Python', 'FastAPI', 'IA', 'Docker', 'RabbitMQ'],
+          isPrivate: true,
+        },
+        {
+          name: 'FicaQuietoKalucky',
+          description:
+            'Bot de Discord completo e escalável para gerenciar a movimentação de membros entre canais de voz por cargo. Painel com botões, setup rápido, auditoria de ações e arquitetura modular pronta para produção.',
+          tags: ['Python', 'discord.py', 'Automação'],
+          repo: 'https://github.com/jubureba/FicaQuietoKalucky',
+        },
+        {
+          name: 'MeterDock',
+          description:
+            'Addon para World of Warcraft (Midnight 12.0+) que adiciona snap, dock e sincronização de redimensionamento ao medidor de dano nativo da Blizzard, sem substituí-lo. Inclui peek expand e menu de contexto.',
+          tags: ['Lua', 'WoW Addon', 'UI'],
+          repo: 'https://github.com/jubureba/MeterDock',
         },
         {
           name: 'MelodyBot',
           description:
-            'Bot de música para Discord, escrito em JavaScript, com site de apresentação próprio.',
+            'O bot de música paraense para Discord, escrito em JavaScript. Toca faixas em canais de voz com uma stack simples em Node.',
           tags: ['JavaScript', 'Discord.js', 'Node'],
           repo: 'https://github.com/jubureba/MelodyBot',
           live: 'https://melody-bot.vercel.app',
         },
         {
-          name: 'FicaQuietoKalucky',
+          name: 'MelodyBotSite',
           description:
-            'Bot de Discord em Python para gerenciar a movimentação de membros em servidores.',
-          tags: ['Python', 'Discord', 'Automação'],
-          repo: 'https://github.com/jubureba/FicaQuietoKalucky',
+            'Site de apresentação do MelodyBot, com landing page em HTML, CSS e JavaScript e deploy na Vercel.',
+          tags: ['HTML', 'CSS', 'JavaScript'],
+          repo: 'https://github.com/jubureba/MelodyBotSite',
+          live: 'https://melody-bot-site.vercel.app',
         },
         {
-          name: 'frost-wolf-landing',
+          name: 'ChangeVersionJava',
           description:
-            'Landing page moderna construída em TypeScript, com deploy na Vercel.',
-          tags: ['TypeScript', 'React', 'Vercel'],
-          repo: 'https://github.com/jubureba/frost-wolf-landing',
-          live: 'https://frost-wolf-landing.vercel.app',
-        },
-        {
-          name: 'CRUD-WPF-EntityFramework',
-          description:
-            'Sistema CRUD de referência usando WPF e Entity Framework para persistência.',
-          tags: ['C#', 'WPF', 'Entity Framework'],
-          repo: 'https://github.com/jubureba/CRUD-WPF-ENTITYFRAMEWORK',
-        },
-        {
-          name: 'cursomc',
-          description:
-            'Projeto de estudos backend em Java, explorando arquitetura em camadas e boas práticas.',
-          tags: ['Java', 'Spring', 'REST'],
-          repo: 'https://github.com/jubureba/cursomc',
+            'App desktop para quem cansou de trocar a variável de ambiente do Java na mão. Cadastra os caminhos das JDKs instaladas e alterna a versão por combobox ou pelo menu da bandeja, sem abrir as configurações do sistema.',
+          tags: ['C#', 'WPF', '.NET Framework'],
+          repo: 'https://github.com/jubureba/ChangeVersionJava',
         },
       ],
     },
@@ -411,50 +414,51 @@ export const translations: Record<Language, Translation> = {
       subtitle: 'A selection of personal and open source projects from my GitHub.',
       viewCode: 'View code',
       viewLive: 'Live demo',
+      privateLabel: 'Private',
       items: [
         {
-          name: 'ChangeVersionJava',
+          name: 'Cortaí',
           description:
-            'Desktop app for anyone tired of switching the Java environment variable by hand. Change your Java version system-wide in a few clicks.',
-          tags: ['C#', 'WPF', '.NET Framework'],
-          repo: 'https://github.com/jubureba/ChangeVersionJava',
+            'A SaaS that turns long videos (podcasts, lives, classes) into short, viral clips using AI. Event-driven microservices architecture: transcription with Whisper, viral-moment detection with Gemini and rendering with FFmpeg. Flutter app (mobile and web) with Mercado Pago payments.',
+          tags: ['Flutter', 'Python', 'FastAPI', 'AI', 'Docker', 'RabbitMQ'],
+          isPrivate: true,
+        },
+        {
+          name: 'FicaQuietoKalucky',
+          description:
+            'A complete, scalable Discord bot to manage member movement across voice channels by role. Button-based panel, quick setup, action auditing and a production-ready modular architecture.',
+          tags: ['Python', 'discord.py', 'Automation'],
+          repo: 'https://github.com/jubureba/FicaQuietoKalucky',
+        },
+        {
+          name: 'MeterDock',
+          description:
+            "A World of Warcraft addon (Midnight 12.0+) that adds snap, dock and synced resize to Blizzard's built-in damage meter, without replacing it. Includes peek expand and a right-click menu.",
+          tags: ['Lua', 'WoW Addon', 'UI'],
+          repo: 'https://github.com/jubureba/MeterDock',
         },
         {
           name: 'MelodyBot',
           description:
-            'A Discord music bot written in JavaScript, with its own showcase website.',
+            'A Discord music bot written in JavaScript. Plays tracks in voice channels with a simple Node stack.',
           tags: ['JavaScript', 'Discord.js', 'Node'],
           repo: 'https://github.com/jubureba/MelodyBot',
           live: 'https://melody-bot.vercel.app',
         },
         {
-          name: 'FicaQuietoKalucky',
+          name: 'MelodyBotSite',
           description:
-            'A Python Discord bot to manage member movement across servers.',
-          tags: ['Python', 'Discord', 'Automation'],
-          repo: 'https://github.com/jubureba/FicaQuietoKalucky',
+            'The showcase site for MelodyBot — a landing page in HTML, CSS and JavaScript, deployed on Vercel.',
+          tags: ['HTML', 'CSS', 'JavaScript'],
+          repo: 'https://github.com/jubureba/MelodyBotSite',
+          live: 'https://melody-bot-site.vercel.app',
         },
         {
-          name: 'frost-wolf-landing',
+          name: 'ChangeVersionJava',
           description:
-            'A modern landing page built with TypeScript and deployed on Vercel.',
-          tags: ['TypeScript', 'React', 'Vercel'],
-          repo: 'https://github.com/jubureba/frost-wolf-landing',
-          live: 'https://frost-wolf-landing.vercel.app',
-        },
-        {
-          name: 'CRUD-WPF-EntityFramework',
-          description:
-            'A reference CRUD system using WPF and Entity Framework for persistence.',
-          tags: ['C#', 'WPF', 'Entity Framework'],
-          repo: 'https://github.com/jubureba/CRUD-WPF-ENTITYFRAMEWORK',
-        },
-        {
-          name: 'cursomc',
-          description:
-            'A backend study project in Java, exploring layered architecture and best practices.',
-          tags: ['Java', 'Spring', 'REST'],
-          repo: 'https://github.com/jubureba/cursomc',
+            'A desktop app for anyone tired of switching the Java environment variable by hand. Register your installed JDK paths and switch versions from a combobox or the tray menu, without opening system settings.',
+          tags: ['C#', 'WPF', '.NET Framework'],
+          repo: 'https://github.com/jubureba/ChangeVersionJava',
         },
       ],
     },

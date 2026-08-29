@@ -1,6 +1,6 @@
 import { useLanguage } from '../context/LanguageContext'
 import { Reveal, SectionHeading } from '../components/Reveal'
-import { ArrowUpRightIcon, CodeIcon, GithubIcon } from '../components/icons'
+import { ArrowUpRightIcon, CodeIcon, GithubIcon, LockIcon } from '../components/icons'
 
 export function Projects() {
   const { t } = useLanguage()
@@ -28,15 +28,23 @@ export function Projects() {
                     <CodeIcon className="h-5 w-5" />
                   </span>
                   <div className="flex items-center gap-1">
-                    <a
-                      href={project.repo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`${project.name} — ${t.projects.viewCode}`}
-                      className="grid h-8 w-8 place-items-center rounded-lg text-slate-500 transition hover:bg-slate-100 hover:text-accent-deep dark:text-slate-400 dark:hover:bg-white/10 dark:hover:text-accent"
-                    >
-                      <GithubIcon className="h-4 w-4" />
-                    </a>
+                    {project.isPrivate && (
+                      <span className="inline-flex items-center gap-1 rounded-full border border-amber-400/40 bg-amber-400/10 px-2.5 py-1 text-xs font-medium text-amber-600 dark:text-amber-400">
+                        <LockIcon className="h-3 w-3" />
+                        {t.projects.privateLabel}
+                      </span>
+                    )}
+                    {project.repo && (
+                      <a
+                        href={project.repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${project.name} — ${t.projects.viewCode}`}
+                        className="grid h-8 w-8 place-items-center rounded-lg text-slate-500 transition hover:bg-slate-100 hover:text-accent-deep dark:text-slate-400 dark:hover:bg-white/10 dark:hover:text-accent"
+                      >
+                        <GithubIcon className="h-4 w-4" />
+                      </a>
+                    )}
                     {project.live && (
                       <a
                         href={project.live}
